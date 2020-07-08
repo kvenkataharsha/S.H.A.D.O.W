@@ -71,7 +71,7 @@ def profile_page(request):
                 'token': account_activation_token.make_token(user),
             })
 
-            send_mail(mail_subject, message, 'shadowiiits2@gmail.com', [mail])
+            send_mail(mail_subject, message, 'example@gmail.com', [mail])
             return render(request, 'email_confirmation.html')
 
         elif (role == "journalist"):
@@ -89,7 +89,7 @@ def profile_page(request):
                 'token': account_activation_token.make_token(user),
             })
 
-            send_mail(mail_subject, message, 'shadowiiits2@gmail.com', [mail])
+            send_mail(mail_subject, message, 'example@gmail.com', [mail])
             return render(request, 'email_confirmation.html')
         else :
             anonymus = Anonymous()
